@@ -423,3 +423,30 @@ font-weight:600;
 color:white;
 
 }
+.join-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+.join-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+.join-form input, .join-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.join-form button {
+    background: #6a1b9a; /* Purple from your theme */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
