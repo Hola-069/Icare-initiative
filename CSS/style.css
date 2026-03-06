@@ -1,0 +1,359 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f6fb;
+color:#333;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:40px;
+}
+
+.logo h2{
+color:#6a0dad;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.nav-links a:hover{
+color:#6a0dad;
+}
+
+.menu-btn{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+background:
+linear-gradient(rgba(106,13,173,0.7),rgba(255,105,180,0.6)),
+url("https://images.unsplash.com/photo-1521790360281-8b0e03e2b52a");
+
+background-size:cover;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:600px;
+margin:auto;
+}
+
+.hero button{
+margin-top:30px;
+padding:14px 30px;
+border:none;
+border-radius:30px;
+background:white;
+color:#6a0dad;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* SECTIONS */
+
+.section{
+padding:80px 12%;
+}
+
+.section h2{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+color:#6a0dad;
+}
+
+/* STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.stat{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.stat h3{
+font-size:40px;
+color:#ff69b4;
+}
+
+/* ABOUT */
+
+.about-box{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+line-height:1.8;
+}
+
+/* PROGRAMS */
+/* Basic section styling (adjust colors/fonts to match your site) */
+#programs {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background as in screenshot */
+}
+
+#programs h2 {
+    color: #8e44ad; /* Purple from screenshot */
+    margin-bottom: 30px;
+}
+
+/* Container for cards - use flexbox with wrap */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Key fix: allows cards to wrap to new rows */
+    justify-content: center; /* Centers cards horizontally */
+    gap: 20px; /* Space between cards */
+    max-width: 1200px; /* Optional: limits max width to prevent over-stretching */
+    margin: 0 auto; /* Centers the container */
+}
+
+/* Individual card styling */
+.card {
+    flex: 1 1 300px; /* Flexible growth/shrink, min-width 300px */
+    max-width: 350px; /* Prevents cards from getting too wide */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left;
+}
+
+.card h3 {
+    color: #8e44ad; /* Purple headers */
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Media query for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%; /* Full width on small screens */
+        max-width: none;
+    }
+}
+/* GALLERY */
+.impact {
+    text-align: center;
+    padding: 40px;
+}
+
+.impact h2 {
+    color: purple;
+    margin-bottom: 30px;
+}
+
+.impact-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.impact-gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* JOIN */
+
+.join{
+max-width:500px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.join input,.join select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:5px;
+}
+
+.join button{
+width:100%;
+padding:12px;
+border:none;
+background:#6a0dad;
+color:white;
+border-radius:5px;
+}
+
+/* DONATE */
+
+.donate{
+background:linear-gradient(135deg,#6a0dad,#ff69b4);
+color:white;
+text-align:center;
+}
+
+.donate button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:white;
+color:#6a0dad;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+.footer{
+background:#222;
+color:#aaa;
+text-align:center;
+padding:40px;
+}
+
+.footer h3{
+color:white;
+}
+
+.socials{
+margin:20px 0;
+}
+
+.socials a{
+margin:0 10px;
+font-size:20px;
+color:#ff69b4;
+}
+
+.socials a:hover{
+color:white;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.navbar{
+padding:15px 20px;
+}
+
+.nav-links{
+position:absolute;
+top:70px;
+right:0;
+background:white;
+flex-direction:column;
+width:200px;
+display:none;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.nav-links a{
+padding:10px;
+}
+
+.menu-btn{
+display:block;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+}
+
+.donate-btn{
+    background-color:#7B2CBF;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:bold;
+    transition:0.3s;
+    margin-top:30px;
+    display:inline-block;
+}
+
+.donate-btn:hover{
+    background-color:#5A189A;
+}
+.socials{
+margin:20px 0;
+}
+
+.socials a{
+text-decoration:none;
+margin:0 10px;
+color:#ff69b4;
+font-weight:600;
+}
+
+.socials a:hover{
+color:white;
+}
