@@ -410,3 +410,15 @@ font-size:28px;
 .social-btn:hover{
   opacity:0.85;
 }
+.about-box {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.about-box h3 {
+    text-align: left;
+}
+
+.section h2 {
+    text-align: center;
+}
