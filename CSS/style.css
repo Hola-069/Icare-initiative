@@ -1,3 +1,68 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .logo {
+            max-width: 100px; /* Adjust as needed */
+            height: auto;
+        }
+
+        h1 {
+            color: #6a1b9a; /* Purple color from screenshot */
+            margin: 10px 0;
+        }
+
+        .section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #6a1b9a;
+        }
+
+        .impact-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        .impact-gallery img {
+            max-width: 100%;
+            height: auto;
+            flex: 1 1 150px; /* Flexible growth, min 150px */
+            border-radius: 8px;
+            object-fit: cover; /* Ensures images fill space without distortion */
+        }
+
+        .join {
+            text-align: center;
+            font-size: 24px;
+            color: #6a1b9a;
+            margin: 40px 0;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            .impact-gallery {
+                flex-direction: column; /* Stack images vertically on mobile */
+            }
+        }
 *{
 margin:0;
 padding:0;
@@ -356,4 +421,5 @@ font-weight:600;
 
 .socials a:hover{
 color:white;
+
 }
