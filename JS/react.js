@@ -5,8 +5,9 @@ export default function ContactForm() {
 
   const onSubmit = async (event) => {
     event.preventDefault();
+    setResult("Sending....");
     const formData = new FormData(event.target);
-    formData.append("access_key", "0c1fac8a-3431-46e3-81bc-685fa8b1a103");
+    formData.append("access_key", "218334e0-f3ad-417a-ba63-1aa2a6bd50da");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -14,7 +15,12 @@ export default function ContactForm() {
     });
 
     const data = await response.json();
-    setResult(data.success ? "Success!" : "Error");
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      setResult("Error");
+    }
   };
 
   return (
@@ -22,8 +28,8 @@ export default function ContactForm() {
       <input type="text" name="name" required/>
       <input type="email" name="email" required/>
       <textarea name="message" required></textarea>
-      <button type="submit">Submit</button>
-      <p>{result}</p>
+      <button type="submit">Submit Form</button>
+      <span>{result}</span>
     </form>
   );
 }
